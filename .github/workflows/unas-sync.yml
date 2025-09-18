@@ -20,6 +20,9 @@ jobs:
       - name: Debug - list files
         run: ls -R
 
+      - name: Debug - list files
+        run: ls -R
+
       - name: Restore dependencies
         run: dotnet restore AUTOLIFE/AUTOLIFE.csproj
 
