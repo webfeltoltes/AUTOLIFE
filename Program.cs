@@ -448,7 +448,10 @@ class Program
         }
 
         // Ha nincs → létrehozzuk
-        string sef = RemoveAccents(name).Replace(" ", "-").ToLowerInvariant();
+        string sef = RemoveAccents(name)
+    .Replace(" ", "-")
+    .Replace("&", "es")   // <-- új: az & karaktert cseréli
+    .ToLowerInvariant();
         var newCatXml = $@"<?xml version=""1.0"" encoding=""UTF-8""?>
 <Categories>
   <Category>
