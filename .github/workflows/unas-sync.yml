@@ -25,4 +25,4 @@ jobs:
         run: dotnet build AUTOLIFE/AUTOLIFE.csproj --configuration Release --no-restore
 
       - name: Run UNAS sync
-        run: dotnet run --configuration Release --no-build --project AUTOLIFE/AUTOLIFE.csproj
+        run: dotnet run --configuration Release --no-build --project AUTOLIFE.csproj
