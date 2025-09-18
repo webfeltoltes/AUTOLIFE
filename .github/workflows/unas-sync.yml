@@ -17,6 +17,8 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '9.0.x'
+      - name: Debug - list files
+        run: ls -R
 
       - name: Restore dependencies
         run: dotnet restore AUTOLIFE/AUTOLIFE.csproj
